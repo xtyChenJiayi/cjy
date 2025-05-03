@@ -5,13 +5,11 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="{{ '#about-me' | relative_url }}">学术主页</a>
+            <a href="{{ site.baseurl }}#about-me">学术主页</a>
           </li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}">
-                {{ site.t[site.active_lang][link.title] | default: link.title }}
-              </a>
+              <a href="{{ site.baseurl }}{{ link.url }}">{{ site.t.zh[link.title] | default: link.title }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -20,3 +18,19 @@
     </div>
   </div>
 </div>
+
+<style>
+.language-switch {
+  padding: 3px 8px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+
+.language-switch:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
+}
+</style>

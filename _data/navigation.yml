@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "关于本人"
+    url: "/#about-me"
+
+  - title: "教育背景"
+    url: "/#-教育背景"
+
+  - title: "最新消息"
+    url: "/#-最新消息"
+
+  - title: "实习经历"
+    url: "/#-实习经历"
+
+  - title: "项⽬经历"
+    url: "/#-项⽬经历"
+
+  - title: "学生工作"
+    url: "/#-学生工作"
+
+  - title: "所获荣誉"
+    url: "/#-所获荣誉"

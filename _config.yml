@@ -12,10 +12,10 @@ title_separator          : "-"
 subtitle                 : 
 name                     : "陈葭迤(Jiayi Chen)"
 description              : "复旦大学公共经济系本科生，专注于金融行业。"
-url                     : "https://jxtse.github.io"
+url                     : "https://ganzhenliang.github.io/xtycjy"
 baseurl                 : ""
-repository               : "jxtse/jxtse.github.io"
-google_scholar_stats_use_cdn : false
+repository               : "ganzhenliang/xtycjy"
+google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -131,7 +131,7 @@ defaults:
       type: pages
     values:
       layout: default
-      author_profile: true
+      author_profile: false
 
 
 # Sass/SCSS

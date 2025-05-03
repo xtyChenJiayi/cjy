@@ -4,15 +4,23 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">学术主页</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
+            <a href="#about-me">学术主页</a>
+          </li>
           {% for link in site.data.navigation.main %}
-            {% if link.title == "English" %}
-              <li class="masthead__menu-item"><a href="{{ link.url }}" target="_self" id="english-link">{{ link.title }}</a></li>
-            {% elsif link.url contains "http" and link.url contains "://" %}
-              <li class="masthead__menu-item"><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
-            {% else %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-            {% endif %}
+            {% assign first_two = link.url | slice: 0, 2 %}
+            <li class="masthead__menu-item">
+              {% if link.title == "English" %}
+                <a href="{{ link.url }}" target="_self" id="english-link">{{ link.title }}</a>
+              {% elsif link.url contains "http" and link.url contains "://" %}
+                <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+              {% elsif first_two == "/#" %}
+                {%- assign anchor_only = link.url | remove: "/#" | prepend: "#" -%}
+                <a href="{{ anchor_only }}">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

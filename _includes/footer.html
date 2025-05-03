@@ -2,22 +2,3 @@
 <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 0.8em; color: #666;">
   <p>Updated at {{ site.time | date: '%Y-%m-%d' }} | Thanks <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank">Raye Ren</a> for this amazing template</p>
 </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const currentOrigin = window.location.origin;
-  const currentPath = window.location.pathname;
-
-  document.querySelectorAll('a[href^="' + currentOrigin + currentPath + '#"]').forEach(link => {
-    link.addEventListener('click', function (e) {
-      const targetID = this.href.split('#')[1];
-      const target = document.getElementById(targetID) || document.querySelector(`[id='${CSS.escape(targetID)}']`);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, '', '#' + targetID); // 保留锚点地址但不刷新
-      }
-    });
-  });
-});
-</script>

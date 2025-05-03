@@ -53,6 +53,7 @@ redirect_from:
 </div>
 </div>
 
+<span id="educations"></span>
 # 🎓 教育背景
 <div class="timeline-item">
   <div class="timeline-time">2022.09 – 2026.06</div>
@@ -80,11 +81,13 @@ redirect_from:
   </div>
 </div>
 
+<span id="news"></span>
 # 🔥 最新消息
 - *2024.06*: &nbsp;🎉 加入中信证券研究所，担任行业研究实习生，专注于新能源领域深度研究与财务建模。
 - *2024.05*: &nbsp;荣获 CFA Institute Research Challenge 华东赛区二等奖，带领团队完成 40 页深度公司研究报告。
 - *2024.03*: &nbsp;被录取为联合国志愿者组织（UNV）研究助理，参与灾后就业政策的调研与数据分析项目。
 
+<span id="internships"></span>
 # 🧑‍💼 实习经历
 <div class="timeline-item">
   <div class="timeline-time">2024.03 – 2024.06</div>
@@ -140,6 +143,7 @@ redirect_from:
   </div>
 </div>
 
+<span id="projects"></span>
 # 📌 项目经历
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">July, 2024</div><img src='images/pic01.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -171,6 +175,7 @@ redirect_from:
 </div>
 </div>
 
+<span id="blogs"></span>
 # 🏫 学生工作
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">July, 2024</div><img src='images/pic01.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -194,6 +199,7 @@ redirect_from:
 </div>
 </div>
 
+<span id="honors"></span>
 # 🏅 所获荣誉
 - *2023.09*: &nbsp;荣获复旦大学优秀学生奖学金（2022–2023 学年）  
 - *2023.05*: &nbsp;获评复旦大学“优秀共青团员”荣誉称号  

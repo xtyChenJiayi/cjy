@@ -15,7 +15,7 @@ description              : "复旦大学公共经济系本科生，专注于金�
 url                     : "https://ganzhenliang.github.io/xtycjy"
 baseurl                 : ""
 repository               : "ganzhenliang/xtycjy"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -131,7 +131,7 @@ defaults:
       type: pages
     values:
       layout: default
-      author_profile: false
+      author_profile: true
 
 
 # Sass/SCSS

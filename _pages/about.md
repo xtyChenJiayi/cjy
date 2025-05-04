@@ -206,6 +206,7 @@ redirect_from:
 - *2024.09*: &nbsp;CFA Institute Research Challenge 华东赛区二等奖  
 - *2024.09*: &nbsp;“互联网+”全国大学生创新创业大赛三等奖  
 
+<span id="self"></span>
 # 📝 个人评价
 - 具备扎实的金融与数据分析能力，能够独立完成行业研究与财务建模任务  
 - 善于沟通与统筹，具备团队协作与项目推进能力  

@@ -1,72 +1,81 @@
+# Ultra-AcadHomepage
 
-<h1 align="center">
-AcadHomepage
-</h1>
+> 🧠 A deeply customized academic homepage template — developed by [Zhenliang Gan](https://github.com/GanZhenliang).
 
-<div align="center">
+**Ultra-AcadHomepage** 是一个基于 [acad-homepage](https://github.com/RayeRen/acad-homepage.github.io) 模板的深度定制版本，专为学术个人主页设计，具备模块化配置、美观简洁、双语支持等特性，适合研究者、开发者和学生展示自己的学术背景与成果。
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
+---
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+## 🌟 Features 特性
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+- 🎓 极简美观的学术主页风格
+- 🌐 中英文双语支持，自动切换
+- 📱 响应式布局，兼容桌面与移动端
+- ⚙️ GitHub Pages 一键部署，支持自定义域名
+- 🧩 模块化内容配置，基于 `_data` 和 `_pages` 文件夹
+- 💡 支持时间轴、项目展示卡片、荣誉奖项等自定义组件
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+---
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+## 🚀 Quick Start 快速开始
 
-## Quick Start
+### 1. 克隆项目
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+```bash
+git clone https://github.com/GanZhenliang/Ultra-AcadHomepage.git
+cd Ultra-AcadHomepage
+````
 
-## Debug Locally
+### 2. 安装依赖（确保你安装了 Ruby 和 Bundler）
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+```bash
+bundle install
+```
 
-# Acknowledges
+### 3. 本地运行
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+```bash
+bundle exec jekyll serve
+```
+
+打开浏览器访问 [http://localhost:4000](http://localhost:4000)
+
+---
+
+## 🧭 目录结构说明
+
+| 目录 / 文件       | 说明                   |
+| ------------- | -------------------- |
+| `_config.yml` | 全局配置，包括名称、导航、语言等     |
+| `_data/`      | 菜单导航、社交链接等结构化数据配置    |
+| `_pages/`     | 首页、项目、简历、文章等页面文件     |
+| `_includes/`  | 页面片段模板（页头、页脚、导航栏等）   |
+| `assets/`     | 样式文件、JavaScript、图像资源 |
+| `Gemfile`     | Jekyll 所需的依赖项声明      |
+
+---
+
+## 🌐 自定义部署
+
+你可以将本项目部署在：
+
+* GitHub Pages（推荐）
+* Vercel / Netlify 等静态托管平台
+* 自定义服务器 + Nginx
+
+### 自定义域名绑定（GitHub Pages）
+
+将你绑定的域名写入 `CNAME` 文件并推送即可，GitHub Pages 会自动识别。
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+> Forked from [acad-homepage](https://github.com/RayeRen/acad-homepage.github.io)
+> Developed and maintained by [Zhenliang Gan](https://github.com/GanZhenliang)
+
+---
+
+Feel free to star ⭐ this repo if it helps you!
